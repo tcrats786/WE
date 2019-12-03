@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<form style="width: 400px;" action="recdata.html">
+		<fieldset>
+			<legend>Product Information Form</legend>
+			<div>
+			<label for="name">Name of prduct*</label>
+			<input type="text" id="name" name="productName" required="true">
+			</div><br>
+			<div>
+			<label for="image">Image of Product*</label>
+			<img src="./coat.jpg" width="200">
+			</div>
+			<br>
+			<div>
+				<label>Quality*</label>
+				<input type="number" step="2" min="0" max="20" maxlength="2" required>
+				<br>*must not be more than 20pt <br>
+			</div>
+			<div>
+				<label>Quantity</label>
+				<input type="text" accept="number" name="quality" id="quality" readonly="true" value="60">
+			</div><hr>
+			<div>
+				<input type="reset">
+				<input type="submit" name="submit" value="Add Product">
+			</div>
+		</fieldset>
+
+	</form>
+
+
+
+</body>
+</html>

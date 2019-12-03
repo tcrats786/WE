@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<form style="width: 300px;" action="recData.html" target="_blank" autocomplete="">
+		<fieldset>
+			<legend>Form</legend>
+			<div>
+				<label>Username:*</label>
+				<input type="text" name="username" placeholder="Username">
+			</div><br>
+			<div>
+				<label>Password:*</label>
+				<input type="password" name="password" placeholder="Password" maxlength="8">
+				<br>
+				*Password must be maximum 8 length
+			</div><br>
+			<div>
+				<label>Gender:*</label>
+				<input type="radio" name="gender" value="1"> Male
+				<input type="radio" name="gender" value="0"> Female
+			</div> <br>
+			<div>
+				<label>Upload Image</label><br>
+				<img src="../images/3.jpg" width="200">
+				<input type="file" name="file"> 
+			</div><br>
+			<div>
+				<label>About</label><br>
+				<textarea placeholder="About User" rows="6" cols="60"></textarea> 
+			</div>
+			<fieldset>
+				<legend>Interests</legend>
+				<label>Interests:</label>
+				<input type="text" list="hint" name="Interests">
+				<datalist id="hint">
+				    <option value="Music">
+				    <option value="Code">
+				    <option value="Books">
+				    <option value="Gardening">
+				</datalist>
+
+			</fieldset>
+
+			<div>
+				<label>Select Country:*</label><br><br>
+				<select>
+					<option>Country</option>
+					<option selected="true" value="pk">Pakistan</option>
+					<option value="in">India</option>
+					<option value="us">United States</option>
+					<option value="ir">Iran</option>
+					<option value="iq">Iraq</option>
+				</select>
+			</div>
+
+
+			<div><br>
+				<strong><input type="checkbox" name="agreement">I accept the terms and conditions for the Site</strong>
+			</div><br>			<input type="reset" name="submit" value="Reset Form">
+			<input type="submit" name="submit" value="Sign Up">
+		</fieldset>
+	</form>
+</body>
+</html>
